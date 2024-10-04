@@ -35,7 +35,7 @@ export const Hero = () => {
   }, [displayedText, isDeleting, currentRoleIndex, roles]);
 
   return (
-    <div className="border-neutral-900 pb-4 lg:mb-35">
+    <div className="border-neutral-900 pb-4 lg:mb-35 ml-4">
       <div className="flex flex-col lg:flex-row lg:items-start">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">

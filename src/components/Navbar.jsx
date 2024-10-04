@@ -8,7 +8,7 @@
         <nav className="mb-20 flex items-center justify-between py-6">
         <div className="flex flex-shrink-0 items-center">
             {/* <img className="mx-2 w-10" src={logo} alt="logo" /> */}
-            <a href="" className="mx-2 w-10 text-4xl">
+            <a href="" className="mx-4 w-10 text-4xl">
             Portofolio.
             </a>
         </div>
