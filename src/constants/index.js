@@ -1,5 +1,6 @@
 import project1 from "../assets/project/lezatara.png";
 import project2 from "../assets/project/bold.png";
+import project3 from "../assets/project/slog.png";
 
 export const HERO_CONTENT = `I am a final semester student at Esa Unggul University of Jakarta, majoring in Informatics Engineering. I have a strong interest in pursuing a career as a Web Developer.  With possess basic skills in web programming, I have honed my skills in front-end technologies like React, as well as back-end technologies like Node.js, MySQL. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -43,17 +44,19 @@ export const PROJECTS = [
     description:
       "Lezatara is an Indonesian food recipe website that contains ingredients and cooking procedures.",
     technologies: ["HTML", "CSS", "Javascript", "Node.js"],
+    link: "https://lezatara.netlify.app/"
   },
   {
     title: "Bold Invosi Bersama",
     image: project2,
     description:
-      "Company profile Bold Innovation Bersama which serves air, land, sea shipping and event organizers.",
+    "Company profile Bold Innovation Bersama which serves air, land, sea shipping and event organizers.",
     technologies: ["HTML", "CSS"],
+    link: "https://boldinovasibersama.netlify.app/ "
   },
   {
     title: "Slog Admin Dashboard",
-    image: project2,
+    image: project3,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
     technologies: ["Laravel", "Mysql", "PHP"],
@@ -63,5 +66,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Jakarta, Indonesia ",
   phoneNo: "+62 85892471651 ",
-  email: "andhikatrisna30@gmail.com",
+  email: "andhikatrisna3002@gmail.com",
 };

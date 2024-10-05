@@ -43,21 +43,21 @@ export const Hero = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="pb-16 text-6xl font-thin tracking-tighter lg:mt-16 lg:text-7xl">
+              className="pb-16 text-6xl font-thin tracking-tighter lg:mt-16 lg:text-7xl text-center lg:text-left">
               Andhika Trisna Putra
             </motion.h1>
             <motion.span
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to bg-purple-500 bg-clip-text text-5xl tracking-tighter text-transparent">
+              className="bg-gradient-to-r from-pink-300 via-slate-500 to bg-purple-500 bg-clip-text text-5xl tracking-tighter text-transparent text-center lg:text-left">
               {displayedText}
             </motion.span>
             <motion.p
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1.5 }}
-              className="my-2 mx-wxl py-6 font-light tracking-tighter">
+              className="my-2 mx-wxl py-6 font-light tracking-tighter text-center lg:text-left">
               {HERO_CONTENT}
             </motion.p>
 
@@ -68,7 +68,7 @@ export const Hero = () => {
               transition={{ duration: 2 }}
               href={cvFile}
               download
-              className="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              className="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
               Download CV
             </motion.a>
           </div>
@@ -81,7 +81,7 @@ export const Hero = () => {
               transition={{ duration: 1.5 }}
               src={profilePic}
               alt="Andhika Trisna Putra"
-              className="max-w-xs lg:max-w-md lg:ml-16 lg:-mt-20"
+              className="max-w-xs lg:max-w-md lg:ml-16 lg:-mt-20 rounded-lg"
             />
           </div>
         </div>

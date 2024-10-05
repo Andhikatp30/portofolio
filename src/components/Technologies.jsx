@@ -1,12 +1,9 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { FaLaravel } from "react-icons/fa6";
-import { FaNodeJs } from "react-icons/fa6";
+import { FaLaravel, FaNodeJs, FaPhp, FaSquareJs } from "react-icons/fa6";
 import { SiMysql } from "react-icons/si";
-import { FaPhp } from "react-icons/fa";
-import { FaSquareJs } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
-const icnoVariatns = (duration) => ({
+const iconVariants = (duration) => ({
   initial: { y: -10 },
   animate: {
     y: [10, -10],
@@ -25,56 +22,64 @@ const Technologies = () => {
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
-        duration={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl">
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        className="my-20 text-center text-5xl font-bold text-white"
+      >
         Technologies
       </motion.h1>
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4">
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        className="flex flex-wrap items-center justify-center gap-8"
+      >
         <motion.div
-          variants={icnoVariatns(2.5)}
+          variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <RiReactjsLine className="text-7xl" style={{ color: "#61DAFB" }} />
+          className="rounded-2xl border-4 border-neutral-800 p-6 shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <RiReactjsLine className="text-5xl" style={{ color: "#61DAFB" }} />
         </motion.div>
         <motion.div
-          variants={icnoVariatns(3.5)}
+          variants={iconVariants(6)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <FaLaravel className="text-7xl" style={{ color: "#FF2D20" }} />
+          className="rounded-2xl border-4 border-neutral-800 p-6 shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <FaLaravel className="text-5xl" style={{ color: "#FF2D20" }} />
         </motion.div>
         <motion.div
-          variants={icnoVariatns(5)}
+          variants={iconVariants(1)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <FaNodeJs className="text-7xl" style={{ color: "#68A063" }} />
+          className="rounded-2xl border-4 border-neutral-800 p-6 shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <FaNodeJs className="text-5xl" style={{ color: "#68A063" }} />
         </motion.div>
         <motion.div
-          variants={icnoVariatns(3)}
+          variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <FaSquareJs className="text-7xl" style={{ color: "#F7DF1E" }} />
+          className="rounded-2xl border-4 border-neutral-800 p-6 shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <FaSquareJs className="text-5xl" style={{ color: "#F7DF1E" }} />
         </motion.div>
         <motion.div
-          variants={icnoVariatns(4)}
+          variants={iconVariants(4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <FaPhp className="text-7xl" style={{ color: "#777BB4" }} />
+          className="rounded-2xl border-4 border-neutral-800 p-6 shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <FaPhp className="text-5xl" style={{ color: "#777BB4" }} />
         </motion.div>
         <motion.div
-          variants={icnoVariatns(6)}
+          variants={iconVariants(7)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiMysql className="text-7xl" style={{ color: "#00758F" }} />
+          className="rounded-2xl border-4 border-neutral-800 p-6 shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <SiMysql className="text-5xl" style={{ color: "#00758F" }} />
         </motion.div>
       </motion.div>
     </div>
